@@ -13,6 +13,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Banner from "@/components/ui/Banner";
 import SplashCursorDemo from "@/components/common/SplashCursorDemo";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -97,6 +98,7 @@ export default function RootLayout({
       >
         <AppProvider>
           <ThemeProvider>
+            <SpeedInsights />
             <Toaster />
             <NProgressProvider />
             <SplashCursorDemo />
